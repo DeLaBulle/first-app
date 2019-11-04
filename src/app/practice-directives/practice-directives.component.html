@@ -1,0 +1,10 @@
+<button class="btn btn-primary" (click)="onLogDisplay()">{{ displayKey }} details</button>
+<p class="mt-2" *ngIf="display">Secret password is Salmon</p>
+<div class="mt-3" 
+    *ngFor="let time of logTime; let i = index"
+    [ngClass]="{'backColor': i >= 4}"
+    >{{ time | date:'medium' }}
+    <button class="btn btn-danger" 
+        (click)="onDeleteLine(i)"
+    >Delete this line</button>
+</div>

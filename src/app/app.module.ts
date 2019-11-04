@@ -12,6 +12,7 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-edit.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { PracticeDirectivesComponent } from './practice-directives/practice-directives.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,6 +23,7 @@ import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
     RecipeItemComponent,
     ShoppingListComponent,
     ShoppingEditComponent,
+    PracticeDirectivesComponent,
   ],
   imports: [
     FormsModule,
