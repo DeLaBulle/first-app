@@ -2,6 +2,13 @@
     <div class="col-12">
         <app-shopping-edit></app-shopping-edit>
         <hr/>
-        <p>My shopping list</p>
+        <ul class="list">
+            <li 
+                class="list__item"
+                *ngFor="let ingredient of ingredients"
+            >
+            {{ ingredient.amount }} {{ ingredient.unit }} {{ ingredient.name }} 
+            </li>
+        </ul>
     </div>
 </div>

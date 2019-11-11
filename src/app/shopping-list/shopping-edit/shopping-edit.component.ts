@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping-edit.component.scss']
 })
 export class ShoppingEditComponent implements OnInit {
-
+  units = ['sans', 'CS', 'CC', 'g', 'ml'];
   constructor() { }
 
   ngOnInit() {
