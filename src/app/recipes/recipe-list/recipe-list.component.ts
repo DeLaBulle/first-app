@@ -12,7 +12,11 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'Tarte au citron',
       'La meilleure recette au monde',
-      'https://www.encoreungateau.com/wp-content/uploads/2018/04/tarte-citron-cap-2.jpg')
+      'https://www.encoreungateau.com/wp-content/uploads/2018/04/tarte-citron-cap-2.jpg'),
+    new Recipe(
+      'Cake au carottes',
+      'Une recette simple et délicieuse',
+      'https://ww2.bettybossi.ch/static/rezepte/x/bb_kuxx820801_0052a_x.jpg')  
   ];
   constructor() { }
 

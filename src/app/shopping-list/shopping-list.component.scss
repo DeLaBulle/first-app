@@ -1,0 +1,27 @@
+.list{
+    list-style: none;
+    padding: 0;
+    &__item{
+        border:1px solid #ccc;
+        padding: 12px;
+        transition: all 400ms ease-in-out;
+        cursor: pointer;
+        &:hover{
+            background-color: lighten(#96f3ff,10%);
+            transform: scale(.996);
+            box-shadow: 0 10px 20px 0 rgba(0,0,0,.11),0 1px 3px 0 rgba(0,0,0,.08)
+        }
+        &:not(:last-child){
+            border-bottom:none;
+        }
+        &:first-child{
+            border-radius: 4px 4px 0 0;
+        }
+        &:last-child{
+            border-radius: 0 0 4px 4px;
+        }
+        &:only-child{
+            border-radius: 4px;
+        }
+    }
+}
