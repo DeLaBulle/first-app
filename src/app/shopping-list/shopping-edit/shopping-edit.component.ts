@@ -7,8 +7,8 @@ import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '
   styleUrls: ['./shopping-edit.component.scss']
 })
 export class ShoppingEditComponent implements OnInit {
-  @ViewChild('nameInput',{static: false}) nameInputRef: ElementRef;
-  @ViewChild('amountInput',{static: false}) amountInputRef: ElementRef;
+  @ViewChild('nameInput') nameInputRef: ElementRef;
+  @ViewChild('amountInput') amountInputRef: ElementRef;
   @Output() ingredientAdded = new EventEmitter<{name: string, amount: number}>();
   constructor() { }
 
