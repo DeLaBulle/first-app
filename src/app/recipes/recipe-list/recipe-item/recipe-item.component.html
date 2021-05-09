@@ -1,0 +1,6 @@
+<div 
+    class="card js-recipe" (click)="onRecipeSelect()">
+    <img [src]="recipe.imagePath" alt="{{ recipe.name }} image" class="card__image" />
+    <h4 class="card__title">{{ recipe.name }}</h4>
+    <p class="card__description">{{ recipe.description }}</p>
+</div>

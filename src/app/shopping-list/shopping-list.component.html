@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-12">
+        <app-shopping-edit
+            (ingredientAdded)="onIngredientAdded($event)"
+            (ingredientWyped)="onIngredientWyped()"></app-shopping-edit>
+        <hr/>
+        <ul class="list">
+            <li 
+                class="list__item"
+                *ngFor="let ingredient of ingredients"
+            >
+            {{ ingredient.amount }} {{ ingredient.name }} 
+            </li>
+        </ul>
+    </div>
+</div>
