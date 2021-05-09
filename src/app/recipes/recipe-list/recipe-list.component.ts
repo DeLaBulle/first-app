@@ -16,7 +16,7 @@ export class RecipeListComponent implements OnInit {
     new Recipe(
       'Cake au carottes',
       'Une recette simple et délicieuse',
-      'https://ww2.bettybossi.ch/static/rezepte/x/bb_kuxx820801_0052a_x.jpg')  
+      'https://ww2.bettybossi.ch/static/rezepte/x/bb_kuxx820801_0052a_x.jpg')
   ];
   constructor() { }
 

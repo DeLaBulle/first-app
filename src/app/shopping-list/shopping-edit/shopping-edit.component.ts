@@ -9,7 +9,7 @@ import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '
 export class ShoppingEditComponent implements OnInit {
   @ViewChild('nameInput') nameInputRef: ElementRef;
   @ViewChild('amountInput') amountInputRef: ElementRef;
-  @Output() ingredientAdded = new EventEmitter<{name: string, amount: number}>();
+  @Output() ingredientAdded = new EventEmitter<{name: string, amount: string}>();
   @Output() ingredientWyped = new EventEmitter<{}>();
   constructor() { }
 
